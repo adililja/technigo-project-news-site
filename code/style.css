@@ -65,12 +65,17 @@ header {
   display: none;
   margin-top: 10px;
   background-color: #81367bff;
+  top: 72px; /* right below header */
+  left: 0;
+  width: 80vw; /* full viewport width */
+  z-index: 10; /* make sure it appears on top */
 }
 
 .menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%; /* Ensure the ul takes full width */
 }
 
 .menu li {
@@ -80,8 +85,10 @@ header {
 .menu a {
   color: #f5f5f4ff;
   text-decoration: none;
-  display: block;
-  padding: 10px;
+  display: block; /* Makes the <a> behave like a block element */
+  padding: 12px 16px;
+  width: 100%; /* Stretch to fill the width of the parent <li> */
+  box-sizing: border-box; /* Includes padding in the width calculation */
 }
 
 .menu a:hover {
@@ -94,7 +101,7 @@ header {
 }
 
 
-/* Tablet: 600px and up */
+/* Tablet: 600px and up, grid 2 columns*/
 @media (min-width: 600px) {
   body {
     font-size: 18px;
@@ -102,7 +109,7 @@ header {
   }
 }
 
-/* Desktop: 1024px and up */
+/* Desktop: 1024px and up, grid 4 columns*/
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
