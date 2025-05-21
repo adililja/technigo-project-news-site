@@ -139,6 +139,35 @@ main {
   padding: 0 8px;
 }
 
+.polaroid-card {
+  background: linear-gradient(to bottom right, #562452, #562452, #81367bff, #e49ab0ff);
+  padding: 20px;
+  width: 89%;
+  margin: 10px auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.polaroid-card:hover {
+  background: linear-gradient(to bottom right, #562452, #81367bff, #81367bff, #e49ab0ff, #e49ab0ff);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.polaroid-img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+h2 {
+  text-align: center;
+  color: #f5f5f4ff;
+}
+
 .other-news {
   display: flex;
   flex-direction: column;
