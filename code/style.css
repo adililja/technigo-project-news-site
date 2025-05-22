@@ -99,6 +99,10 @@ header {
   display: block;
 }
 
+main {
+  padding: 0 8px;
+}
+
 .animation-box {
   background: linear-gradient(to bottom right, #481e44, #562452, #81367bff);
   display: flex;
@@ -133,10 +137,6 @@ header {
   50% {
     border-color: transparent;
   }
-}
-
-main {
-  padding: 0 8px;
 }
 
 .polaroid-card {
@@ -200,6 +200,43 @@ h3 {
   margin: 10px;
   padding: 10px;
   text-align: center;
+}
+
+.footer-wrap {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom left,  #562452, #481e44);
+  color: #fffacc;
+  padding: 0 12px;
+  font-size: 12px;
+  position: relative;
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copyright img{
+  width: 26px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.social-icons img {
+  width: 20px; /* or 24px for bigger icons */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1); /* zoom effect on hover */
 }
 
 
