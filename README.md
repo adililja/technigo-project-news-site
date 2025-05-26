@@ -1,7 +1,5 @@
 # News Site
 
-My news site
-
 Replace this readme with your own information about the project. You can include things like:
 
 -   Brief description of the assignment
